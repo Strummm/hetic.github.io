@@ -268,7 +268,7 @@ footer div {
 
 @media screen and (max-width: 900px) {
     nav .nav_title {
-        display: none;
+        font-size: 0.8rem;
     }
 
     nav #burger {
