@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Neutraface 2 Text Book';
+    src: url('Neutraface2Text-Book.woff2') format('woff2'),
+        url('Neutraface2Text-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

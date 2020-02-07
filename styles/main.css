@@ -1,0 +1,306 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* HEADER */
+
+#header .nav_title a:nth-child(1){
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background: rgb(8,21,68);
+  background: linear-gradient(90deg, rgba(8,21,68,1) 0%, rgba(44,16,75,1) 35%, rgba(3,4,24,1) 100%);
+}
+
+nav{
+  display: flex;
+  margin-bottom: 30px;
+  position: fixed;
+  z-index: 5;
+  justify-content: space-around;
+  height: 84px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.90);
+  -webkit-box-shadow: 0px 15px 65px -40px rgba(0,0,0,0.69);
+  -moz-box-shadow: 0px 15px 65px -40px rgba(0,0,0,0.69);
+  box-shadow: 0px 15px 65px -40px rgba(0,0,0,0.69);
+}
+header .nav_title{
+  padding: 0;
+  padding-top: 35px;
+}
+nav img{
+  width: 160px;
+
+}
+nav>div{
+  padding-top: 40px;
+}
+nav div>a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 60px;
+  font-family: Helvetica;
+}
+
+#burger{
+  display: none;
+}
+#header .homePage img{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+}
+#header > div{
+    position: relative;
+}
+
+.homePage{
+  padding-top: 140px;
+}
+
+#header .homePage img {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slidein {
+      from {
+        width: 50%;
+
+      }
+
+      to {
+        width: 13%;
+        left: 20%;
+      }
+
+  }
+
+
+.first_text{
+    padding: 280px 0px 0px 150px;
+    width: 50%;
+    color: white;
+    opacity: 0;
+    position: absolute;
+    right:0%;
+    top: 80%;
+}
+
+
+.first_text {
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-name: text_slide;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes text_slide {
+    from {
+        right:0%;
+        top: 30%;
+        opacity: 0;
+    }
+
+    to {
+        right:10%;
+        top: 30%;
+        opacity: 1;
+
+
+    }
+
+}
+
+
+.first_text h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 100;
+    color: white;
+    font-family: 'Neutra', sans-serif;
+    font-weight: lighter;
+}
+
+
+
+
+.en_savoir_plus{
+  background: rgb(56,19,114);
+  background: linear-gradient(90deg, rgba(56,19,114,1) 0%, rgba(113,85,229,1) 35%, rgba(64,58,206,1) 100%);
+  width: 24.75%;
+  height: 40px;
+  border-radius: 30px;
+}
+.en_savoir_plus h6{
+  font-size: 1,4em;
+  font-family: 'Neutra';
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 12px;
+  font-weight: 100;
+  color: white;
+}
+
+
+.headerContainer{
+  display: flex;
+  position: relative;
+}
+
+/* MAIN */
+
+main{
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.container{
+  padding-top: 10px;
+  display: flex;
+}
+
+.textBlock{
+  margin-top: 110px;
+  width: 67.71%;
+}
+
+
+img{
+  margin: 0;
+}
+
+
+
+.phone{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  padding-bottom: 150px;
+
+}
+
+.appIcons{
+  margin-left: 75px;
+  margin-bottom: 20px;
+}
+
+.phoneImage{
+  margin: 0;
+  width: 400px;
+  height: 600px;
+  margin-top: -180px;
+
+}
+
+
+.appStore{
+  margin-right: 30px;
+  width: 100px;
+  height: 39px;
+}
+
+.googleStore{
+  width: 100px;
+  height: 40px;
+}
+
+
+
+
+footer{
+  background: white;
+  height: 300px;
+  color: black;
+  font-family: Helvetica;
+  padding: 0 90px;
+  font-size: 0.8rem;
+  -webkit-box-shadow: 0px -15px 65px -40px rgba(0,0,0,0.69);
+  -moz-box-shadow: 0px -15px 65px -40px rgba(0,0,0,0.69);
+  box-shadow: 0px -15px 65px -40px rgba(0,0,0,0.69);
+
+}
+footer strong{
+  font-size: 1.0rem;
+}
+footer div p{
+  width :150px;
+  line-height: 30px;
+  font-size : 0.8rem;
+}
+footer div{
+  display: flex;
+  margin-top: 30px;
+  justify-content:space-around;
+}
+
+#trait{
+  width: 1px;
+  height: 200px;
+  background: black;
+}
+
+/* FONTS */
+
+ @font-face { font-family: 'Neutra'; src: url('../fonts/neutra/Neutraface2Text-Book.woff2'); }
+ @font-face { font-family: 'Neutra'; font-weight: bold; src: url('../fonts/neutra/Neutraface2Text-BoldItalic.woff2'); }
+
+  @font-face { font-family: 'Neutra'; font-weight: lighter; src: url('../fonts/neutra/NeutraText-LightAlt.woff2'); }
+
+
+  .firstTitle{
+    font-family: 'Neutra', sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    margin: 50px 0px 20px 0px;;
+  }
+
+
+  .secondTitle{
+    font-family: 'Neutra', sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    margin: 0px 0px 20px 0px;;
+  }
+
+  .text{
+    font-family: 'Neutra', sans-serif;
+    font-weight: lighter;
+    color: white;
+    width: 60.42%;
+  }
+
+ .gradient {
+   background: -webkit-linear-gradient(-45deg,#400CB5,#665DD0,#CB5BF5);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   width: 100%;
+ }
+
+
+
+ ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+
+@media screen and (max-width: 750px){
+  #burger{
+    display: block;
+    width: 60px;
+  }
+  .nav_title{
+    display: none;
+  }
+}
